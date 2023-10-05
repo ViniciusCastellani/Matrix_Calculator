@@ -15,7 +15,7 @@ def menu():
         print(f"{key}) {value}")
 
     while True:
-
+        print()
         choice = input("Enter your choice: ")
 
         if choice in options:

@@ -5,7 +5,7 @@ def initializeMatrix():
     answer = ""
     
     while True:
-        num = input("insert the elements of the row separated by spaces ")
+        num = input("insert the elements of the row separated by spaces ").strip()
         num = num.split(" ")
         row = [float(n) for n in num]
         if len(matrix) > 0 and len(row) != len(matrix[0]) and answer == "Y":
