@@ -3,5 +3,5 @@ def printMatrix(matrix1):
     for row in matrix1:
         print("[", end=" ")
         for element in row:
-                print(element, end=" ")
+                print(f"{element:5}", end=" ")
         print("]")

@@ -1,10 +1,8 @@
 import numpy as np
-
 from initializeMatrix import initializeMatrix
 from printMatrix import printMatrix
 from menu import menu
 from calc import *
-
 
 def main():
     choice = menu()
@@ -72,6 +70,7 @@ def main():
                     print(f"\nThe determinant of the matrix is = {result:.2f}")
                 else:
                     print("Operation not possible.")
+          
             
 if __name__ == "__main__":
     main()
