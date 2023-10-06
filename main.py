@@ -4,8 +4,6 @@ from printMatrix import printMatrix
 from menu import menu
 from calc import *
 
-
-
 def main():
     answer = " "
     
