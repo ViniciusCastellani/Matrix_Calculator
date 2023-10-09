@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 from initializeMatrix import initializeMatrix
 from printMatrix import printMatrix
 from menu import menu
@@ -9,13 +10,10 @@ def main():
     
     while True:
         
-        if answer == "N":
-            break
-        
         choice = menu()
         
         if choice == '0':
-            return
+            sys.exit()
         
         elif choice not in ['6','4','5','7'] and answer != "Y":
             print("\nMATRIX 1")
