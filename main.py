@@ -66,7 +66,8 @@ def main():
                         constant = int(input("Insert the constant to multiply the matrix: "))
                         result = multconst(result, constant)
                     else:    
-                        result = multconst(matrix1, matrix2)
+                        constant = int(input("Insert the constant to multiply the matrix: "))
+                        result = multconst(matrix1, constant)
                     
                     if result is not None:
                         printMatrix(result)
@@ -107,7 +108,7 @@ def main():
                         print("Operation not possible.")
         
         while True:
-            answer = input("Do you want to calculate another operation using the result? ").upper()
+            answer = input("Do you want to calculate another operation using the result? [Y/N] ").upper()
             if answer in ["Y","N"]:
                 break
             else:
